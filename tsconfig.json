@@ -2,5 +2,24 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./packages/zustand-toolkit"
+    },
+    {
+      "path": "./packages/is"
+    },
+    {
+      "path": "./packages/request"
+    },
+    {
+      "path": "./packages/ts-utils"
+    },
+    {
+      "path": "./apps/todo"
+    },
+    {
+      "path": "./packages/react-toolkit"
+    }
+  ]
 }

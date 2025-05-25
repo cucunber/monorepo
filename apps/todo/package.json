@@ -1,0 +1,17 @@
+{
+  "name": "@org/todo",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^3.19.1",
+    "@emotion/react": "^11.14.0",
+    "@org/request": "workspace:^",
+    "@org/zustand-toolkit": "workspace:^",
+    "next-themes": "^0.4.6",
+    "react-hook-form": "^7.56.4",
+    "react-icons": "^5.5.0",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.2",
+    "zustand": "^5.0.4"
+  }
+}
