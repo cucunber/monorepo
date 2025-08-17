@@ -36,12 +36,12 @@ export interface EntitySelectors<
   Id extends EntityId,
   State extends EntityState<Entity, Id> = EntityState<Entity, Id>,
 > {
-  selectIds(state: State): EntityId[]
+  selectIds(state: State): Id[]
   selectEntities(state: State): Dictionary<Entity, Id>
   selectAll(state: State): Entity[]
   selectTotal(state: State): number
   selectById(state: State, id: Id): Entity | undefined
-  boundedSelectIds(): EntityId[]
+  boundedSelectIds(): Id[]
   boundedSelectEntities(): Dictionary<Entity, Id>
   boundedSelectAll(): Entity[]
   boundedSelectTotal(): number

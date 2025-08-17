@@ -91,7 +91,7 @@ export function actionsFactory<Entity extends object, Id extends EntityId>({
 
 		const entities = {
 			...state.entities,
-			[id]: merge({ ...entity }, update)
+			[id]: merge({}, entity, update)
 		};
 
 		const ids = state.ids;

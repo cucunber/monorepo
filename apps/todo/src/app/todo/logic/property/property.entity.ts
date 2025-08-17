@@ -1,21 +1,5 @@
-import { z } from "zod";
+import { PropertyDTOSchema, PropertySchema, propertySchema } from "./property.schema";
 
-const propertyMetaDTOSchema = z.object({
-    
-})
-
-export const propertyDTOSchema = z.object({
-  id: z.string(),
-  type: z.number(),
-  value: z.string(),
-});
-
-export type PropertyDTOSchema = z.infer<typeof propertyDTOSchema>;
-
-export const propertySchema = z.object({
-  id: z.string().uuid(),
-  type: z.number(),
-  value: z.string(),
-});
-
-export type TaskSchema = z.infer<typeof propertySchema>;
+export const createPropertyEntity = (dto: PropertyDTOSchema): PropertySchema => {
+    return propertySchema.parse(dto);
+}

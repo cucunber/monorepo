@@ -36,6 +36,9 @@
       "path": "../../packages/zustand-toolkit/tsconfig.lib.json"
     },
     {
+      "path": "../../packages/ts-utils/tsconfig.lib.json"
+    },
+    {
       "path": "../../packages/request/tsconfig.lib.json"
     }
   ]

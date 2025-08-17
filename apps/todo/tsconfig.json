@@ -6,6 +6,9 @@
       "path": "../../packages/zustand-toolkit"
     },
     {
+      "path": "../../packages/ts-utils"
+    },
+    {
       "path": "../../packages/request"
     },
     {

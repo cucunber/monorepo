@@ -21,6 +21,7 @@ export const tasksActions = taskEntityAdapter.getActions(tasksStore.setState);
 export const tasksSelectors = taskEntityAdapter.getSelectors(tasksStore.getState);
 
 export type SimpleTask = Omit<TaskSchema, 'id'>;
+export type TaskId = TaskSchema['id'];
 
 export const addTask = (task: SimpleTask) => {
   tasksActions.addOne({ id: uuidv4(), ...task })
